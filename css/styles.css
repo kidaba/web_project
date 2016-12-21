@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Nunito', calibri, sans-serif;
+    background: #808080;
+    width: 100%;
+}
+
+
+/*************************
+     NAVIGATION STYLES
+*************************/
+
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', Calibri, cursive;
+}
+
+.navbar-default {
+    background: #800080;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:visited {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    background: white;
+}
+
+.nav>li a:hover {
+    color: #722872;
+    background: #bbb;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.nav>li a {
+    color: #ffffff;
+    font-family: 'Montserrat', Calibri, sans-serif;
+}
+
+.navigation-container {
+    max-width: 960px;
+    margin: auto;
+}
+
+nav {
+    margin-bottom: 0;
+}
+
+.profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+    top: -15px;
+    left: 10px;
+}
+
+
+/*************************
+    ABOUT PAGE STYLES
+*************************/
+
+
+#about-page {
+    max-width: 1000px;
+    margin: auto;
+    background: #aaa;
+    margin-top: -20px;
+    padding-top: 40px;
+}
+
+.about-page-photo {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 100%;
+}
+
+#row-div {
+    padding: 70px 10px 40px 10px;
+}
+
+.design-description {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 40px;
+}
+
+#border {
+    width: 500px;
+    border: 2px solid #ffffff;
+    margin: 50px auto 15px auto;
+}
+
+
+
+/*************************
+  PORTFOLIO PAGE STYLES
+*************************/
+
+
+#portfolio-page {
+    color: #808080;
+    max-width: 1000px;
+    background: #eee;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #808080;
+}
+
+#portfolio-page h1 {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.portfolio-image {
+    width: 480px;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 4px solid #808080;
+}
+
+.portfolio-border {
+    width: 500px;
+    border: 2px solid #808080;
+    margin: 50px auto;
+}
+
+
+/*************************
+  CONTACT PAGE STYLES
+*************************/
+
+
+#contact-page {
+    color: #808080;
+    max-width: 1000px;
+    background: #eee;
+    margin: auto;
+}
+
+#contact-page h1 {
+    margin-top: 50px;
+    font-weight: bold; 
+}
+
+#contact-page-border {
+    width: 500px;
+    margin: 50px auto;
+    border: 2px solid #808080;
+}
+
+.contact-message {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.form-control {
+    border: 2px solid #808080;
+    border-radius: 0;
+}
+
+.btn-md {
+    color: #808080;
+    border-radius: 0;
+    background: #eee;
+    border: 2px solid #808080;
+}
+
+.btn-md:hover {
+    background: #808080;
+    border-color: inherit;
+}
+
+#contact-form {
+    margin-bottom: 25px;
+}
+
+
+/*************************
+  ABOUT THIS PAGE STYLES
+*************************/
+
+
+
+#creator {
+    width: 100%;
+    background: #aaa;
+    padding-bottom: 50px;
+}
+
+#creator-page-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#creator h3 {
+    margin-top: 60px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.para {
+    font-size: 1.5em;
+}
+
+
+
+/*************************
+      FOOTER STYLES
+*************************/
+
+
+footer {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+    background: #800080;
+}
+
+#footer-content {
+    font-size: 1.4em;
+    font-family: 'Nunito', tahoma, sans-serif;
+}
+
+
+
+/*************************
+      MEDIA QUERIES
+*************************/
+
+
+
+
+@media (max-width : 319px) {
+    .portfolio-image {
+        width: 300px;
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        border: 4px solid #808080;
+    }
+    
+}
+
+
+
+@media (min-width : 320px) and (max-width : 479px){
+    #border {
+        width: 250px;
+    }
+    
+    .design-description {
+        padding-top: 0;
+    }
+    
+    .about-page-photo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .portfolio-border {
+        width: 250px;
+    }
+    
+} 
+
+
+
+@media (min-width : 480px) and (max-width : 766px){
+    #border {
+        width: 360px;
+    }
+    
+    .design-description {
+        padding-top: 0;
+    }
+    
+    .text-center {
+        margin-top: 40px;
+    }
+    
+    .about-page-photo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .portfolio-border {
+        width: 360px;
+    }
+    
+} 
+
+
+
+@media (min-width : 767px) and (max-width : 991px){
+    body {
+        background: #aaa;
+    }
+    
+    .about-page-photo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .text-center {
+        margin-top: 40px;
+    }
+    
+    .design-description {
+        padding-top: 0;
+    }
+}  
+
+
+
+
+@media (min-width : 992px) and (max-width : 1200px){
+    #border {
+        width: 360px;
+    }
+    
+    .about-page-photo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}  
+
+
+
+
+
+
