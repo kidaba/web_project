@@ -6,7 +6,7 @@ body {
     margin: 0;
     color: white;
     font-family: 'Nunito', calibri, sans-serif;
-    background: #808080;
+    background-color: #808080;
     width: 100%;
 }
 
@@ -15,6 +15,9 @@ body {
      NAVIGATION STYLES
 *************************/
 
+.navbar-default #navigation-menu .icon-bar {
+    background-color: #fff;
+}
 
 .navbar-nav {
     float: right;
@@ -30,21 +33,23 @@ body {
     border-radius: 0;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:visited {
-  color: white;
-  font-size: 2.5em;
-  font-weight: bold;
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:visited {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
-.navbar-default .navbar-nav > li > a {
-  color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-weight: 600;
-  display: inline-block;
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+    display: inline-block;
 }
 
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav>li>a:focus {
     background: white;
 }
 
@@ -82,7 +87,6 @@ nav {
     ABOUT PAGE STYLES
 *************************/
 
-
 #about-page {
     max-width: 1000px;
     margin: auto;
@@ -109,17 +113,15 @@ nav {
 }
 
 #border {
-    width: 500px;
+    max-width: 500px;
     border: 2px solid #ffffff;
     margin: 50px auto 15px auto;
 }
 
 
-
 /*************************
   PORTFOLIO PAGE STYLES
 *************************/
-
 
 #portfolio-page {
     color: #808080;
@@ -148,7 +150,7 @@ nav {
 }
 
 .portfolio-border {
-    width: 500px;
+    max-width: 500px;
     border: 2px solid #808080;
     margin: 50px auto;
 }
@@ -157,7 +159,6 @@ nav {
 /*************************
   CONTACT PAGE STYLES
 *************************/
-
 
 #contact-page {
     color: #808080;
@@ -168,11 +169,11 @@ nav {
 
 #contact-page h1 {
     margin-top: 50px;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 #contact-page-border {
-    width: 500px;
+    max-width: 500px;
     margin: 50px auto;
     border: 2px solid #808080;
 }
@@ -208,8 +209,6 @@ nav {
   ABOUT THIS PAGE STYLES
 *************************/
 
-
-
 #creator {
     width: 100%;
     background: #aaa;
@@ -234,11 +233,9 @@ nav {
 }
 
 
-
 /*************************
       FOOTER STYLES
 *************************/
-
 
 footer {
     width: 100%;
@@ -255,15 +252,21 @@ footer {
 }
 
 
-
 /*************************
       MEDIA QUERIES
 *************************/
 
+@media (max-width: 319px) {}
 
-
-
-@media (max-width : 319px) {
+@media (max-width: 479px) {
+    .design-description {
+        padding-top: 0;
+    }
+    .about-page-photo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
     .portfolio-image {
         width: 300px;
         height: 250px;
@@ -273,98 +276,57 @@ footer {
         margin-bottom: 20px;
         border: 4px solid #808080;
     }
-    
+    .portfolio-border {
+        max-width: 250px;
+    }
+    .about-page-photo {
+        width: 200px;
+        height: 200px;
+    }
 }
 
-
-
-@media (min-width : 320px) and (max-width : 479px){
-    #border {
-        width: 250px;
+@media (max-width: 766px) {
+    .nav {
+        width: 100%;
+        text-align: center;
     }
-    
+    .nav li {
+        padding: 1em;
+    }
     .design-description {
         padding-top: 0;
     }
-    
-    .about-page-photo {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    
-    .portfolio-border {
-        width: 250px;
-    }
-    
-} 
-
-
-
-@media (min-width : 480px) and (max-width : 766px){
-    #border {
-        width: 360px;
-    }
-    
-    .design-description {
-        padding-top: 0;
-    }
-    
     .text-center {
         margin-top: 40px;
     }
-    
     .about-page-photo {
         margin-left: auto;
         margin-right: auto;
         display: block;
     }
-    
-    .portfolio-border {
-        width: 360px;
-    }
-    
-} 
+}
 
-
-
-@media (min-width : 767px) and (max-width : 991px){
+@media (max-width: 991px) {
     body {
         background: #aaa;
     }
-    
     .about-page-photo {
         margin-left: auto;
         margin-right: auto;
         display: block;
     }
-    
     .text-center {
         margin-top: 40px;
     }
-    
     .design-description {
         padding-top: 0;
     }
-}  
+}
 
-
-
-
-@media (min-width : 992px) and (max-width : 1200px){
-    #border {
-        width: 360px;
-    }
-    
+@media (max-width: 1200px) {
     .about-page-photo {
         margin-left: auto;
         margin-right: auto;
         display: block;
     }
-}  
-
-
-
-
-
-
+}
